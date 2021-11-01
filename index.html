@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <!--insert CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--start btn-->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <div class="info_box">
+        <div class="info_title">
+            <span>Rules of the Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">You will have only <span>30 seconds</span> per each question.</div>
+            <div class="info">Once you select your answer, you can't reselect.</div>
+            <div class="info">You can't select any question oncev time goes off.</div>
+            <div class="info">You can't exit from the Quiz while you're playing.</div>
+            <div class="info">You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">continue</button>
+        </div>
+    </div>
+
+    <!--quiz box-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Israil Quiz App</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">30</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span>What's 3+1?</span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span>Is 9</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Is 7</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Is 4</span>
+                </div>
+                <div class="option">
+                    <span>Is 2</span>
+                </div>
+            </div>
+        </section>
+
+        <!--box footer-->
+        <footer>
+            <div class="total_que">
+                <span><p>2</p>of<p>5</p>Questions</span>
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!--result-->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="complete_text">Congratulation you've completed the Quiz</div>
+        <div class="score_text">
+            <span>and sorry you fail, you got only <p>2</p> out of <p>5</p></span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html> 
